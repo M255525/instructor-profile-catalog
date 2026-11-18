@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>講師簡介與課程型錄產生器・操作手冊</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700;900&family=Noto+Serif+TC:wght@900&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#1F2430;--sub:#5E6472;--bg:#EDEAE2;--paper:#FBF8F1;--line:#DDD5C4;--navy:#1F3A5F;--gold:#B8892E;--red:#B42318;--blue:#1F5C99}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Noto Sans TC','Microsoft JhengHei',sans-serif;font-size:17px;line-height:1.75}
+main{max-width:800px;margin:0 auto;padding:20px 16px 48px}
+h1,h2{font-family:'Noto Serif TC','PMingLiU',serif;font-weight:900;line-height:1.35;color:var(--navy)}
+h1{font-size:30px;margin:0 0 6px}
+h2{font-size:22px;margin:4px 0 8px}
+section{background:var(--paper);border-radius:6px;border-left:5px solid var(--gold);box-shadow:0 2px 0 var(--line);padding:12px 18px 14px;margin-top:14px}
+a{color:var(--blue);font-weight:700}
+li{margin:5px 0}
+ol,ul{padding-left:1.3em}
+.tw{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:15px;min-width:520px}
+th,td{border:1px solid var(--line);padding:5px 8px;text-align:left;vertical-align:top}
+th{background:var(--bg)}
+.red{color:var(--red);font-weight:900}
+code{background:#fff;border:1px solid var(--line);border-radius:4px;padding:0 4px}
+@media print{body{background:#fff}section{break-inside:avoid;box-shadow:0 0 0 1px #888}}
+</style>
+<body>
+<main>
+<h1>🎓 講師簡介與課程型錄產生器・操作手冊</h1>
+<p><a href="index.html">← 回到產生器</a></p>
+
+<section>
+<h2>這是什麼</h2>
+<p>給<b>講師、顧問、業師</b>用的工具。講師資料和可以教的課程填一次，就能產生：</p>
+<ul>
+<li><b>講師簡介</b>：短版（約 50 字）、中版（約 150 字）、完整版（約 300 字），可選第三人稱正式、第三人稱親切、第一人稱。</li>
+<li><b>🎤 主持人介紹稿</b>：開場時給主持人念，大約 1 分鐘。</li>
+<li><b>講師資料表</b>：邀課單位常要的表格（姓名、現職、專長、學歷、證照、經歷、實績、簡介、可授課程、聯絡方式），可以列印，也可以下載 Word 檔再修改。</li>
+<li><b>A4 課程型錄</b>：封面、講師介紹頁、每門課一頁、邀課資訊頁，可以列印或存成 PDF 寄給邀課單位。</li>
+<li><b>單一課程頁</b>：只印一門課，底下附講師小簡介，適合回覆某一家單位的詢問。</li>
+</ul>
+<p>不用註冊、不用安裝；資料和照片只存在你的瀏覽器，不會上傳。</p>
+</section>
+
+<section>
+<h2>四個步驟</h2>
+<ol>
+<li>左邊「<b>一 講師基本資料</b>」填姓名、稱謂、現職，可上傳照片。</li>
+<li>「<b>二 專長與學經歷</b>」一行寫一項。<b>放在前面的會優先寫進簡介</b>，所以最重要的放第一行。</li>
+<li>「<b>三 授課實績</b>」填年資、時數、人次與授課單位；也可以改用授課紀錄自動統計（見下方）。</li>
+<li>「<b>四 課程</b>」新增每一門課，右邊切換分頁就能看到簡介、資料表、型錄。</li>
+</ol>
+<p>第一次打開會先載入虛構範例「林雅文・數位行銷講師」；按「＋ 從空白開始」就能換成你自己的資料。</p>
+</section>
+
+<section>
+<h2>簡介是怎麼寫出來的</h2>
+<ul>
+<li>簡介<b>只用你填的資料</b>依固定句型組成，不會自己加經歷或形容詞。</li>
+<li>每種長度有字數上限，放不下時會依序拿掉比較次要的句子（例如學歷、著作），姓名、現職、專長一定保留。</li>
+<li>數字用「不灌水」的寫法：填 1,280 小時會寫成「超過 1,200 小時」；剛好 1,200 就寫 1,200。</li>
+<li>填了「開始授課年份」會自動算年資（未滿 2 年不寫）。</li>
+<li>每個版本右上角有字數，按「📋 複製」就能貼到報名表或 LINE；上方可以「複製全部版本」或下載 .txt。</li>
+</ul>
+</section>
+
+<section>
+<h2>用授課紀錄自動算實績</h2>
+<ul>
+<li>在「三 授課實績」勾選「改用授課紀錄自動統計」，從 Excel 複製表格貼上。</li>
+<li>欄位順序：<b>日期、單位、課程、時數、人數</b>（後兩欄可以不填）。用 Tab 或逗號分隔都可以，第一行是標題也沒關係。</li>
+<li>日期可以寫 <code>2025/3/5</code>、<code>2025-03-05</code>、<code>114/3/5</code>（民國年）或 <code>2025年3月</code>。</li>
+<li>會自動算出場次、總時數、人次、合作單位數與每年統計；授課單位依時數多寡排序加進簡介。讀不懂的行會標出行號並略過。</li>
+</ul>
+</section>
+
+<section>
+<h2>課程怎麼填</h2>
+<ul>
+<li><b>時數</b>可以寫一個數字（<code>6</code>），也可以寫多種方案（<code>3 / 6 / 12</code>）。</li>
+<li><b>課程大綱</b>一行一個單元，後面加「｜時數」，例如 <code>內容支柱與行事曆｜1.5</code>，型錄會做成表格並自動合計；合計和上面的時數對不起來會提醒你。</li>
+<li>課程清單可以 ↑↓ 調整順序（型錄照這個順序排），「複製這門」適合做同一門課的不同版本。</li>
+<li>刪除課程要按兩次 ✕（第一次會變成「確定?」）。</li>
+</ul>
+</section>
+
+<section>
+<h2>型錄與列印</h2>
+<ul>
+<li>型錄有 3 種風格（典雅、清新、活力），也可以自訂主色；標題預設是「姓名 課程型錄」，可以改，也可以加年度。</li>
+<li>填了網站網址，封面和邀課頁會印上 QR code。</li>
+<li>內容太多時字會自動縮小；縮到最小還放不下，那一頁會出現<span class="red">紅色虛線框</span>，上方也會提醒，請刪減大綱或經歷的行數。</li>
+<li>按「🖨 列印／存成 PDF」，在列印視窗選<b>紙張 A4、邊界「無」、勾選「背景圖形」</b>；要 PDF 就把印表機選「另存為 PDF」。</li>
+<li>講師資料表的「⬇ 下載 Word」是 .doc 格式，用 Word 開啟後可以再修改；照片請在 Word 裡自行插入。</li>
+<li>課程型錄另外可以下載 Markdown，方便貼到 Notion、部落格或官網。</li>
+</ul>
+</section>
+
+<section>
+<h2>✨ AI 潤飾（選用）</h2>
+<ul>
+<li>規則產生的簡介已經可以直接使用；想要更自然的文筆，可以在 ⚙ 設定自己的 AI 金鑰（Gemini、OpenAI、Claude、OpenRouter、Grok、DeepSeek，或 Ollama 等自訂端點）。</li>
+<li>「六 AI 潤飾簡介」會改寫成四個版本（短、中、完整、主持稿），顯示在「簡介」分頁最下方的紫色卡片。</li>
+<li>每門課的編輯區也可以讓 AI 寫課程簡介、學習目標、課程特色（會直接填進欄位，你可以再改）。</li>
+<li>沒有金鑰也能用：按「複製提示詞」貼到 ChatGPT／Gemini／Claude 網頁版，再把回覆按「貼上 AI 回覆」。</li>
+<li>提示詞要求 AI 不可新增資料裡沒有的經歷與數字；如果 AI 還是寫了資料外的數字，卡片上會<span class="red">標出來提醒</span>。</li>
+</ul>
+</section>
+
+<section>
+<h2>⚙ 常用設定</h2>
+<ul>
+<li><b>顯示</b>：標準字／大字。</li>
+<li><b>🤖 AI 設定</b>：服務、金鑰、模型。金鑰只存在這台瀏覽器。</li>
+<li><b>💾 備份與還原</b>：下載 .json 備份（含照片與所有課程），換電腦時讀回來。</li>
+<li><b>🧹 清除全部資料</b>：公用電腦用完請清除。</li>
+<li><b>關於本工具</b>：操作手冊、創作者資訊、使用警語、加入主畫面、訪客數。</li>
+</ul>
+</section>
+
+<section>
+<h2>⚠ 使用警語</h2>
+<ul>
+<li>簡介、資料表與型錄的內容都來自你填的資料，<b>請確認經歷、證照、時數、人次屬實</b>。不實的學經歷或實績可能違反邀課單位規定，甚至涉及法律責任。</li>
+<li>寫到其他單位名稱前，最好先確認對方同意公開；照片請用你本人或有權使用的圖片。</li>
+<li>使用 AI 時，講師資料會送到你選的 AI 服務；AI 可能寫錯或誇大，請逐字核對後再使用。</li>
+<li>資料只存在這台瀏覽器；換電腦或清除瀏覽器資料前請先下載備份。</li>
+<li>範例中的講師、單位、聯絡方式全部虛構。</li>
+</ul>
+</section>
+
+<section id="creator">
+<h2>👤 關於創作者</h2>
+<div class="mk-creator">
+<style>.mk-creator{line-height:1.75}.mk-creator h3{margin:14px 0 6px;font-size:1.05em}.mk-creator table{width:100%;border-collapse:collapse;font-size:.95em}.mk-creator td,.mk-creator th{text-align:left;padding:5px 6px;border-bottom:1px solid rgba(128,128,128,.3);vertical-align:top}.mk-creator th{white-space:nowrap}.mk-creator ul{margin:4px 0;padding-left:1.4em}.mk-creator .mk-tags{display:flex;flex-wrap:wrap;gap:6px;margin:4px 0}.mk-creator .mk-tags span{border:1px solid rgba(128,128,128,.45);border-radius:999px;padding:1px 10px;font-size:.9em}</style>
+<p><b>Mark Tsai（蔡豐全）</b>為深耕創業輔導與數位轉型領域的顧問與講師，長期擔任勞動力發展署創業顧問與多項政府計畫的顧問、業師與評審委員，協助中小企業導入數據分析與 AI 工具、申請政府補助計畫，並具備跨境電商實務與講師培訓的豐富經驗。本工具是其推廣 AI 工具運用於教學與課程情境的作品之一。</p>
+<p>聯絡信箱：<a href="mailto:tsaimark@gmail.com">tsaimark@gmail.com</a></p>
+<h3>專長</h3>
+<div class="mk-tags"><span>銷售數據分析</span><span>AI 工具運用</span><span>政府補助計畫申請</span><span>創業</span><span>跨境電商</span></div>
+<h3>證照</h3>
+<table>
+<thead><tr><th>年度</th><th>證照</th></tr></thead>
+<tbody>
+<tr><td>2013</td><td>青創總會 創業輔導顧問師班</td></tr>
+<tr><td>2014</td><td>青創總會 網路行銷講師培訓班</td></tr>
+<tr><td>2016</td><td>阿里巴巴 P4P 認證講師</td></tr>
+<tr><td>2017</td><td>iCap 訓練規劃與評量職能基準課程</td></tr>
+<tr><td>2023</td><td>iCap 職能導向課程申請認證實作班</td></tr>
+<tr><td>2025</td><td>iPAS AI 應用規劃師－初級</td></tr>
+<tr><td>2025</td><td>新北市社會局 社區數位陪伴員</td></tr>
+</tbody>
+</table>
+<h3>經歷</h3>
+<ul>
+<li>勞動力發展署桃竹苗分署 創業顧問（2017－迄今）</li>
+<li>勞動力發展署（北北基）小型企業人力提升計畫 顧問（2019－迄今）</li>
+<li>勞動力發展署（桃竹苗）小型企業人力提升計畫 顧問（2019－迄今）</li>
+<li>農業部農業科技司「科技農企業雙軸轉型躍升發展」科技計畫 業師（2025－2026）</li>
+<li>勞動力發展署 企業人力資源提升計畫 審查委員（2024）</li>
+<li>勞動力發展署 職前訓練評鑑計畫 委員（2022）</li>
+<li>勞動部桃竹苗分署 桃竹苗區域運籌人力資源整合服務計畫 顧問（2022－2023）</li>
+<li>經濟部中小企業處 SBIR 海選專案 評審委員（2019－2024）</li>
+<li>勞動力發展署 數位學習課程清單審查會議 審查委員（2024－2025）</li>
+<li>輔仁大學創新跨領域學院 課務委員（2024－2025）</li>
+<li>台北市進出口商業同業公會 跨境電商生態村 顧問</li>
+<li>台灣網商協會 顧問</li>
+<li>中華職能開發策進會 顧問（2018－2020）</li>
+<li>新北市汽車美容人員職業工會 顧問（2023－迄今）</li>
+<li>中華網路行銷講師協會 顧問（2022－迄今）</li>
+<li>新北市社企電商基地 輔導顧問（2018－2020）</li>
+<li>阿里巴巴國際站平台 認證講師（2016）</li>
+<li>巨匠電腦 跨境電子商務班 講師（2016－2017）</li>
+</ul>
+</div>
+</section>
+<p style="text-align:center"><a href="index.html">← 回到產生器</a></p>
+</main>
+</body>
+</html>
